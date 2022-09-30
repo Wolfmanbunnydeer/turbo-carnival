@@ -1,21 +1,94 @@
-@font-face { font-family: Montserrat; src: url(fonts/Montserrat-Regular.ttf); } body { background-color: lightsteelblue; background-image: url("bg.jpg"); height: 600px; background-position: center; background-repeat: no-repeat; background-size: cover;
-} .header { background-color: teal; padding: 30px 30px; color: white; text-align: center; } @font-face { font-family: Montserrat; src: url(fonts/Montserrat-Regular.ttf); } .body style { box-sizing: border-box; font-family: Montserrat; } body { background-color:
-lightsteelblue; background-image: url("bg.jpg"); height: 600px; background-position: center; background-repeat: no-repeat; background-size: cover; } .header { background-color: teal; padding: 30px 30px; color: white; text-align: center; } .header:after
-{ content: ""; display: table; clear: both; } * { box-sizing: border-box; } body { background-color: #00ff00; font-family: "Poppins", sans-serif; margin: 0; } header { background-color: #373b69; display: flex; justify-content: flex-end; padding: 1rem;
-} .search { background-color: transparent; border: 2px solid #22254b; border-radius: 50px; color: #fff; font-family: inherit; font-size: 1rem; padding: 0.5rem 1rem; } .search::placeholder { color: #7378c5; } .search:focus { background-color: #22254b;
-outline: none; } main { display: flex; flex-wrap: wrap; } .movie { background-color: #000099; border-radius: 3px; box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2); overflow: hidden; position: relative; margin: 1rem; width: 300px; } .movie img { width: 100%; }
-.movie-info { color: #eee; display: flex; align-items: center; justify-content: space-between; padding: 0.5rem 1rem 1rem; letter-spacing: 0.5px; } .movie-info h3 { margin: 0; } .movie-info span { background-color: #00ff00; border-radius: 3px; font-weight:
-bold; padding: 0.25rem 0.5rem; } .movie-info span.green { color: rgb(39, 189, 39); } .movie-info span.orange { color: orange; } .movie-info span.red { color: rgb(189, 42, 42); } .overview { background-color: #00ff00; padding: 2rem; position: absolute;
-max-height: 100%; overflow: auto; left: 0; bottom: 0; right: 0; transform: translateY(101%); transition: transform 0.3s ease-in; } .overview h3 { margin-top: 0; } .movie:hover .overview { transform: translateY(0); } @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
-* { box-sizing: border-box; } body { background-color: #22254b; font-family: "Poppins", sans-serif; margin: 0; } header { background-color: #373b69; display: flex; justify-content: flex-end; padding: 1rem; } .search { background-color: transparent; border:
-2px solid #22254b; border-radius: 50px; color: #fff; font-family: inherit; font-size: 1rem; padding: 0.5rem 1rem; } .search::placeholder { color: #7378c5; } .search:focus { background-color: #22254b; outline: none; } main { display: flex; flex-wrap: wrap;
-} .movie { background-color: #373b69; border-radius: 3px; box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2); overflow: hidden; position: relative; margin: 1rem; width: 300px; } .movie img { width: 100%; } .movie-info { color: #eee; display: flex; align-items:
-center; justify-content: space-between; padding: 0.5rem 1rem 1rem; letter-spacing: 0.5px; } .movie-info h3 { margin: 0; } .movie-info span { background-color: #22254b; border-radius: 3px; font-weight: bold; padding: 0.25rem 0.5rem; } .movie-info span.green
-{ color: rgb(39, 189, 39); } .movie-info span.orange { color: orange; } .movie-info span.red { color: rgb(189, 42, 42); } .overview { background-color: #fff; padding: 2rem; position: absolute; max-height: 100%; overflow: auto; left: 0; bottom: 0; right:
-0; transform: translateY(101%); transition: transform 0.3s ease-in; } .overview h3 { margin-top: 0; } .movie:hover .overview { transform: translateY(0); } .tiledbackground { background-image:url("https://i.postimg.cc/XNKRmsns/unicorncolor.jpg"); background-size:
-700px; width: 1300px; height: 2000px; border: 1px solid; } body { background-color: pink; font-size:50px } body{ background: #eee; font-family: "Oswald", Helvetica, sans-serif; } header { margin-top: 4rem; text-align: center; } .title { font-size: 40px;
-transform: skewY(-10deg); letter-spacing: 4px; word-spacing: -8px; color: tomato; text-shadow: -1px -1px 0 firebrick, -2px -2px 0 firebrick, -3px -3px 0 firebrick, -4px -4px 0 firebrick, -5px -5px 0 firebrick, -6px -6px 0 firebrick, -7px -7px 0 firebrick,
--8px -8px 0 firebrick, -30px 20px 40px dimgrey; } .sub-title { font-size: 1.5rem; font-weight: bold; color: #444; } .todo__card { width: 400px; margin: 20px auto; background: white; padding: 30px; box-shadow: 2px 2px #ccc; } .actions { display: flex;
-justify-content: space-between; } .button { background: firebrick; color: white; padding: 5px 20px; border: 1px solid firebrick; border-radius: 10px; font-size: 1.1rem; margin: 0 20px; } .input { padding: 5px; font-size: 1.1rem; } .todo__list { list-style-type:
-none; margin: 0; padding: 0; font-size: 1rem; color: #555; line-height: 2rem; } .todo__list > li { margin: 20px 0; border: 1px solid #eee; padding: 20px 0 20px 20px; display: flex; justify-content: space-between; } .todo__list > li > button { padding:
-5px 20px; border-radius: 10px; font-size: 1rem; margin: 0 20px; } .done { text-decoration: line-through; }
+header>
+    <h1 class="title">Movies</h1>
+    <p class="sub-title">Get it done today</p>
+</header>
+<div class="tiledbackground">
+    <main class="todo__card">
+        <div class="actions">
+            <input id="userinput" class="input" type="text" placeholder="enter movies">
+            <button id="addTodo" class="button">Enter</button>
+        </div>
+
+        <ul id="todoList" class="todo__list">
+            <li class="bold red" random="23">Bad guys</li>
+            <li>Life Of Pi</li>
+            <li>Zooyopia</li>
+            <li>Minions of gru</li>
+            <li>Parasite </li>
+            <li>Raya The last dragon</li>
+        </ul>
+    </main>
+
+
+    <html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Movies
+        </title>
+    </head>
+    <p>
+
+        <body style="text-align: center;">
+            <form>
+                <form id="movieForm">
+                    <h1>Please Enter Your Favorite Movies</h1>
+                    <br>
+                    <label for="movie">Movie Name:</label>
+                    <input id="movie" type="text">
+                    <button type="button" id="movieButton">movie</button>
+    </p>
+    <br>
+
+    <br>
+    <label for="year">Year Released:</label>
+    <input id="year" type="text"> <button type="button" id="movieButton">Year Released</button>
+    <br>
+    <br>
+    <label for="reason">Why You Like it</label>
+    <input id="reason" type="text"> <button type="button" id="movieButton">Why You Like it? </button>
+    <div id="movieOutput">
+        <p style="color: blue;">Movie output goes here.
+            <p/>
+    </div>
+    <br>
+
+    <br>
+    <input type="button" value="Add Movie" onclick="addData()">
+    <input type="button" value="Display Movie" onclick="displayData()">
+
+    <input type="button" value="Reset Movie List" onclick="resetData()">
+    <br>
+    <br>
+
+    <div id="display"></div>
+    </body>
+
+    </html>
+</div>
+</form>
+<p id="movie1"></p>
+
+<p>Please watch movies flixer</p>
+<p>
+    <a href="https://myflixer.to/movie"> <input type="text" id="fix">"Free Flix movie net!"</a>
+</p>
+<p>Watch movie though</p>
+<p id="movie2"></p>
+
+<body>
+    <header>
+        <form id="form">
+            <input type="text" id="search" placeholder="Search" class="search" />
+        </form>
+    </header>
+    <main id="main"></main>
+</body>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Movie Database</title>
+</head>
