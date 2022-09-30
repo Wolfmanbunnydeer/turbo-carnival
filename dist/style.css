@@ -1,0 +1,43 @@
+body {
+background-color: pink;
+  font-size:50px
+}
+.tiledbackground{
+  background-image:url("https://i.postimg.cc/XNKRmsns/unicorncolor.jpg");
+  background-size: 700px;
+  width: 1300px;
+  height: 8000px;
+  border: 1px solid; 
+
+}  
+
+h1{
+    font-size: 50px;
+    font-family:Tacoma;
+    color: darkblue
+  }
+h2{
+    font-size: 30px;
+    font-family:Tacoma;
+    color: purple
+  }
+  .p style{
+    font-size: 30px;
+    font-family:Tacoma;
+    color: darkblue
+  }
+#movies{
+  background-color: yellow;
+}
+table, th, td {
+  border: 1px solid black;
+
+}
+#filmsDiv {
+    margin: 60px;
+    color: rgb(60, 31, 32);
+    background-color: lightblue;
+}
+p {
+  font-size:20px
+}
